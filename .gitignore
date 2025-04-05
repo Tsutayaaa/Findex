@@ -1,0 +1,17 @@
+# Python 虚拟环境
+.venv/
+
+# PyInstaller 构建和输出
+build/
+dist/
+
+# 其他临时文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+*.egg
