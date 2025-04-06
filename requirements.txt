@@ -3,3 +3,4 @@ matplotlib>=3.10.1
 pandas>=2.2.3
 opencv-python>=4.11.0
 fuzzywuzzy>=0.18.0 #可选用于模糊匹配
+python-Levenshtein>=0.12.0
