@@ -1,11 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 a = Analysis(
-    ['Findex_Data.py'],
-    pathex=['C:\\Users\\he\\OneDrive\\Documents\\PythonProject'],  # 指定脚本路径
+    ['./src/Findex_Data.py'],  # 你的主脚本
+    pathex=['/Users/shulei/PycharmProjects/Findex/src'],  # 这里添加源代码路径
     binaries=[],
-    datas=[('heat_loader.py', '.'), ('beh_loader.py', '.')],      # 添加依赖文件
-    hiddenimports=['numpy', 'numpy.core.multiarray', 'fuzzywuzzy'],  # 添加隐藏依赖
+    datas=[],
+    hiddenimports=['loader','numpy','numpy.core.multiarray'],  # 确保 loader 是隐藏导入的模块
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -13,6 +13,7 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
+
 pyz = PYZ(a.pure)
 
 exe = EXE(
@@ -25,13 +26,14 @@ exe = EXE(
     bootloader_ignore_signals=False,
     strip=False,
     upx=True,
-    console=False,  # 隐藏控制台窗口
+    console=False,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
 )
+
 coll = COLLECT(
     exe,
     a.binaries,
@@ -40,4 +42,12 @@ coll = COLLECT(
     upx=True,
     upx_exclude=[],
     name='Findex_Data',
+    distpath='/Users/shulei/PycharmProjects/Findex/dist'
+)
+
+app = BUNDLE(
+    coll,
+    name='Findex_Data.app',
+    icon=None,
+    bundle_identifier=None,
 )
