@@ -1,4 +1,9 @@
-# 🐟Findex📊
+<h1 align="center">🐟Findex📊</h1>
+
+<p align="center">
+  <a href="README.md">中文</a> ｜ 
+  <a href="README_en.md">English</a>
+</p>
 
  Findex 是一款配套与zebrAI_fish的统计绘图工具。其可以读取zebrAI_fish在样本文件夹生成的.npy文件的参数，导出统计表格或者合成热图。
 
@@ -61,14 +66,14 @@ print(loader.heatmap.shape)
 Findex 支持 **Windows** 与 **macOS** 平台，分别提供独立的可执行版本，用户无需安装 Python 环境即可使用。
 
 ### 下载地址
-
-- **Windows 版本**：
+**[Findex_v1.0.1(最新)](https://github.com/Tsutayaaa/Findex/releases/tag/v1.0.1-update)**
+- **[Windows version](https://github.com/Tsutayaaa/Findex/releases/download/v1.0.1-update/Findex_v1.0.1_windows.zip)**:
     
-    下载地址：`https://github.com/Tsutayaaa/Findex/releases/download/v1.0.1-update/Findex_v1.0.1_windows.zip`
+     Download: `https://github.com/Tsutayaaa/Findex/releases/download/v1.0.1-update/Findex_v1.0.1_windows.zip`
     
-- **macOS 版本**：
+- **[macOS version](https://github.com/Tsutayaaa/Findex/releases/download/v1.0.1-update/Findex_v1.0.1_macos.zip)**:
     
-    下载地址：`https://github.com/Tsutayaaa/Findex/releases/download/v1.0.1-update/Findex_v1.0.1_macos.zip`
+     Download: `https://github.com/Tsutayaaa/Findex/releases/download/v1.0.1-update/Findex_v1.0.1_macos.zip`
     
 
 ### 解压内容说明
@@ -125,18 +130,18 @@ pip install -r requirements.txt
 
 <img width="712" alt="image" src="https://github.com/user-attachments/assets/b990a0a2-4dac-4365-aa67-b36f7dce627c" />
 
-- 点击’添加文件夹‘添加样本文件，支持单独添加样本文件夹（eg.Control_001），或者直接添加包含多个样本文件夹的母文件夹。
-- 点击’输出路径‘后的’浏览‘选择输出目录以及导出表格的格式（excel或csv）。
-- 点击’生成统计表‘，下方提示出现证明导出成功。
+- 点击`添加文件夹`添加样本文件，支持单独添加样本文件夹（eg.Control_001），或者直接添加包含多个样本文件夹的母文件夹。
+- 点击`输出路径`后的`浏览`选择输出目录以及导出表格的格式（excel或csv）。
+- 点击`生成统计表`，下方提示出现证明导出成功。
 
 ## Findex_Heatmap
 
 <img width="712" alt="image 1" src="https://github.com/user-attachments/assets/b7b757f3-7d45-4410-afdb-ca8069c171e2" />
 
-- 点击’添加文件夹‘添加样本文件，支持单独添加样本文件夹（eg.Control_001），或者直接添加包含多个样本文件夹的母文件夹。
-- 软件提供‘平滑核大小’和’热图透明度‘两个热图调整指标。
-- 点击’输出路径‘后的’浏览‘选择输出目录，软件会在该路径下生成一个包含所有热图的文件夹。
-- 点击’生成合并热图‘，下方提示出现证明导出成功。
+- 点击`添加文件夹`添加样本文件，支持单独添加样本文件夹（eg.Control_001），或者直接添加包含多个样本文件夹的母文件夹。
+- 软件提供`平滑核大小`和`热图透明度`两个热图调整指标。
+- 点击`输出路径`后的`浏览`选择输出目录，软件会在该路径下生成一个包含所有热图的文件夹。
+- 点击`生成合并热图`，下方提示出现证明导出成功。
 
 <img width="981" alt="image 2" src="https://github.com/user-attachments/assets/b9a3c0ee-eebf-4752-aad6-1a04af2bb5d2" />
 
